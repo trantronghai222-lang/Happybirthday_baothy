@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, My Love</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="fireworks"></canvas>
+
+    <main class="hero">
+      <div class="hero__glow"></div>
+      <p class="hero__badge">Happy Birthday</p>
+      <h1 class="hero__title">To My Beautiful Girlfriend</h1>
+      <p class="hero__subtitle">
+        Tonight is all about you. May your year sparkle like the sky and your
+        smile light up every moment.
+      </p>
+
+      <div class="hero__controls">
+        <label class="hero__upload">
+          <input id="audioUpload" type="file" accept="audio/*" />
+          Add my celebration audio
+        </label>
+        <button id="toggleAudio" class="hero__button" type="button">
+          Play celebration audio
+        </button>
+      </div>
+
+      <audio id="celebrationAudio" preload="auto"></audio>
+
+      <p class="hero__note">
+        Tip: Choose your recording above and press play to relive the moment.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
